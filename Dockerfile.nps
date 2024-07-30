@@ -1,4 +1,4 @@
-FROM hub-mirror.c.163.com/golang:latest as builder
+FROM golang:latest as builder
 ARG GOPROXY=direct
 WORKDIR /go/src/ehang.io/nps
 COPY . .
