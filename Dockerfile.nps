@@ -1,4 +1,4 @@
-FROM golang:latest as builder
+FROM hub.docker.com/golang:latest as builder
 ARG GOPROXY=direct
 WORKDIR /go/src/ehang.io/nps
 COPY . .
